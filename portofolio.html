@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <script src="https://kit.fontawesome.com/e1e2858489.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" alt="">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myworks">My Works</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h5>UI/UX Designer,</h5>
+            <h1>Hello Halo Konnichiwa I'm<br>
+            <span>Mohamad Rifa</span> Algifari Mulia Sembiring.</h1>
+        </div>
+    </div>
+</div>
+<!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-portfolio-img/Rifa.png" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Nama saya Mohamad Rifa Algifari Mulia Sembiring, umur 18 tahun dan kuliah di Universitas Sumatera Utara. Saya memiliki skill dibidanng designing UI/UX maupun gambar ilustrasi, dan bisa membuat website front end. Hobby saya adalah menggambar dan sudah minat didalam design dan ada minat dibdang teknologi. Saya Fans terhadap vocaloid dan menonton anime yaitu Hatsune Miku dan Ayaka. sekian dari perkenalan saya semoga bisa bekerja sama dengan anda.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>
+                            Front End Development <br></li>
+                            <li><span>Web Design</span><br>
+                            Designing UI/UX Websites <br> Drawing Illustration <br></li>
+                            <li><span>MS Office</span><br>
+                            Word <br>Powerpoint <br>Excel</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Pre-School</span><br>
+                            TK Al Azhar Banten<br></li>
+                            <li><span>Elementary School</span><br>
+                            SD Harapan 1 Medan <br></li>
+                            <li><span>Junior High School</span><br>
+                            SMP Harapan 1 Medan</li>
+                            <li><span>High School</span><br>
+                            SMA Harapan 1 Medan</li>
+                            <li><span>College</span><br>
+                            Universitas Sumatera Utara</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services---------->
+<div id="myworks">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Info Tentang Vocaloid</h2>
+                <p>Tugas membuat Web info tentang vocaloid dan sejaranhnya</p>
+                <a href="https://saichiinfo.000webhostapp.com/tugas1.html">LIHAT KUY!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <h2>Web Kalkulator</h2>
+                <p>Tugas membuat kalkulator dengan menggunakan JavaScript</p>
+                <a href="https://saichiinfo.000webhostapp.com/tugas3.html">LIHAT KUY!</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-bootstrap"></i>
+
+                <h2>Web Bootstrap</h2>
+                <p>Tugas membuat website yang bekerja di laptop maupun handphone dan interaktif dengan menggunakan Bootstrap</p>
+                <a href="https://saichiinfo.000webhostapp.com/tugas4.html">LIHAT KUY!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------contact---------->
+<div id="social">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Social</h1>
+                <i class="fa-solid fa-envelope"></i>mikumika122@gmail.com <br>
+                <i class="fa-brands fa-whatsapp"></i>+62 81534564971 <br>
+                <i class="fa-brands fa-instagram"></i>@saichiiayaka
+            </div>
+    </div>
+</div>
+<br>
+
+
+<div class="line">
+<p class="copyright"> &copy;SaichiiAyaka</p></div>
+<br>
+<br>
+<br>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
